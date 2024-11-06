@@ -23,15 +23,14 @@
             display: flex;
             justify-content: center;
             border-radius: 10px;
-            flex-wrap: wrap; /* يجعل القائمة تتكيف مع الشاشة */
         }
         li {
-            padding: 10px 15px; /* تعديل حجم التباعد */
+            padding: 15px 20px;
         }
         li a {
             color: #fff;
             text-decoration: none;
-            font-size: 16px; /* حجم أصغر ليتناسب مع الأجهزة الصغيرة */
+            font-size: 18px;
             font-weight: 600;
         }
         li a:hover {
@@ -41,15 +40,15 @@
 
         /* تنسيق العناوين */
         h1 {
-            font-size: 2em; /* حجم أصغر للعناوين */
+            font-size: 3em;
             color: #42464d;
-            margin: 15px 0;
+            margin: 20px 0;
         }
 
         /* تنسيق الصور */
         .section img {
-            width: 150px;
-            height: 150px;
+            width: 200px;
+            height: 200px;
             border-radius: 50%;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
             margin: 10px;
@@ -66,19 +65,19 @@
             background-color: #ffffff;
             border-radius: 15px;
             text-align: center;
-            max-width: 90%; /* جعلها مناسبة لشاشة أصغر */
+            max-width: 800px;
         }
 
         /* تنسيق الأزرار */
         .custom-button {
             display: block;
-            width: 90%; /* عرض مناسب للأجهزة الصغيرة */
+            width: 80%;
             max-width: 500px;
             margin: 8px auto;
             padding: 12px;
             background: linear-gradient(45deg, #8b7272, #44160a);
             color: white;
-            font-size: 16px; /* حجم نص أصغر */
+            font-size: 18px;
             font-weight: bold;
             text-align: center;
             text-decoration: none;
@@ -101,7 +100,7 @@
             padding: 12px 20px;
             background-color: #007b7f;
             color: white;
-            font-size: 16px;
+            font-size: 18px;
             font-weight: bold;
             text-align: center;
             text-decoration: none;
@@ -119,69 +118,52 @@
             display: flex;
             justify-content: space-around;
             flex-wrap: wrap;
-            gap: 20px;
+            gap: 30px;
             margin-top: 20px;
-            padding: 0 10px;
+            padding: 0 20px;
         }
 
         .book-item {
-            width: 150px; /* حجم أصغر */
+            width: 280px;
             background-color: #ffffff;
             border-radius: 15px;
-            padding: 15px;
+            padding: 20px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             text-align: center;
         }
 
-        .book-item:hover {transform: scale(1.05);
+        .book-item:hover {
+            transform: scale(1.05);
             box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
         }
 
         .book-item img {
-            max-height: 120px; /* ارتفاع أصغر للصور */
+            max-height: 250px;
             object-fit: cover;
             border-radius: 10px;
             transition: transform 0.3s;
         }
 
-        .book-item img:hover {
-            transform: scale(1.05);
-        }
+.book-item img:hover {
+    transform: scale(1.05);
+}
 
-        .borrow-button {
-            margin-top: 8px;
-            padding: 8px 15px;
-            background-color: #007b7f;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 14px;
-            transition: background-color 0.3s;
-        }
+.borrow-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007b7f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
 
-        .borrow-button:hover {
-            background-color: #006f6f;
-        }
-
-        /* وسائط CSS للأجهزة الصغيرة */
-        @media (max-width: 600px) {
-            .custom-button, .search-button {
-                font-size: 14px;
-                padding: 10px;
-            }
-            .book-item {
-                width: 140px;
-            }
-            ul {
-                flex-direction: column;
-            }
-            li {
-                padding: 10px;
-            }
-        }
-    </style>
+.borrow-button:hover {
+    background-color: #006f6f;
+}
+</style>
 </head>
 <body>
 
@@ -226,23 +208,61 @@
     <div class="book-item">
         <img src="img/4.jpg" alt="حيدر وليد - رياضيات">
         <h3>حيدر وليد - رياضيات</h3>
-        <button class="borrow-button" onclick="window.location.href='https://t.me/d_tt02/9'">تحميل الكتاب</button>
+        <button class="borrow-button" onclick="window.location.href='https://t.me/d_tt02/9'">تحميل </button>
     </div>
     <!-- كتاب 2 -->
     <div class="book-item">
         <img src="img/5.jpg" alt="علاء السعداوي - كيمياء">
         <h3>علاء السعداوي - كيمياء</h3>
-        <button class="borrow-button" onclick="window.location.href='https://t.me/d_tt02/28'">تحميل الكتاب</button>
+        <button class="borrow-button" onclick="window.location.href='https://t.me/d_tt02/28'">تحميل </button>
     </div>
     <!-- كتاب 3 -->
     <div class="book-item">
         <img src="img/6.jpg" alt="مؤيد سليم - فيزياء">
         <h3>مؤيد سليم - فيزياء</h3>
-        <button class="borrow-button" onclick="window.location.href='https://t.me/d_tt02/23'">تحميل الكتاب</button>
+        <button class="borrow-button" onclick="window.location.href='https://t.me/d_tt02/23'">تحميل </button>
+    </div>
+    <div class="book-item">
+        <img src="img/4.jpg" alt="حيدر وليد - رياضيات">
+        <h3>حيدر وليد - رياضيات</h3>
+        <button class="borrow-button" onclick="window.location.href='https://t.me/d_tt02/9'">تحميل </button>
+    </div>
+    <!-- كتاب 2 -->
+    <div class="book-item">
+        <img src="img/5.jpg" alt="علاء السعداوي - كيمياء">
+        <h3>علاء السعداوي - كيمياء</h3>
+        <button class="borrow-button" onclick="window.location.href='https://t.me/d_tt02/28'">تحميل </button>
+    </div>
+    <!-- كتاب 3 -->
+    <div class="book-item">
+        <img src="img/6.jpg" alt="مؤيد سليم - فيزياء">
+        <h3>مؤيد سليم - فيزياء</h3>
+        <button class="borrow-button" onclick="window.location.href='https://t.me/d_tt02/23'">تحميل </button>
+    </div>
+
+    <div class="book-item">
+        <img src="img/4.jpg" alt="حيدر وليد - رياضيات">
+        <h3>حيدر وليد - رياضيات</h3>
+        <button class="borrow-button" onclick="window.location.href='https://t.me/d_tt02/9'">تحميل </button>
+    </div>
+    <!-- كتاب 2 -->
+    <div class="book-item">
+        <img src="img/5.jpg" alt="علاء السعداوي - كيمياء">
+        <h3>علاء السعداوي - كيمياء</h3>
+        <button class="borrow-button" onclick="window.location.href='https://t.me/d_tt02/28'">تحميل </button>
+    </div>
+    <!-- كتاب 3 -->
+    <div class="book-item">
+        <img src="img/6.jpg" alt="مؤيد سليم - فيزياء">
+        <h3>مؤيد سليم - فيزياء</h3>
+        <button class="borrow-button" onclick="window.location.href='https://t.me/d_tt02/23'">تحميل </button>
     </div>
 
    
 </div>
+</div>
+   
+
 
 <!-- زر البحث الثابت -->
 <a href="https://t.me/d_tt123bot?start=search" class="search-button" target="_blank">البحث داخل البوت</a>
